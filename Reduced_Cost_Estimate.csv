@@ -22,7 +22,7 @@ Reduced_Cost_Estimate,US East (N. Virginia),Application Servers,Amazon EC2,7248.
 Acknowledgement,,,,,,,,
 "* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
 Rationals,,,,,,,,
-"Switch pricing strategy  form on Demand to (Compute Savings Plans 1 Year  Partial upfront) for Webservers, App severs and RDS ",,,,,,,,
+"Switch pricing strategy  form on Demand to (Compute Savings Plans 1 Year All upfront) for Webservers, App severs and RDS ",,,,,,,,
 Using general purpose EC2 instance instead of compute enhanced one for application severs  **a1.2xlarge**,,,,,,,,
 "Non provisioned SSD for Webservers, App severs and RDS ",,,,,,,,
 S3 One Zone - Infrequent Access  instead of Standard,,,,,,,,
