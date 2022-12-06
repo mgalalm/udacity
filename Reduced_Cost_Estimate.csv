@@ -1,0 +1,29 @@
+﻿Estimate summary,,,,,,,,
+Upfront cost,Monthly cost,Total 12 months cost,Currency,,,,,
+19392.744,4830.764,77361.91,USD,,,,,
+,,* Includes upfront cost,,,,,,
+,,,,,,,,
+,,,,,,,,
+Detailed Estimate,,,,,,,,
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+Reduced_Cost_Estimate,US East (N. Virginia),Web servers,Amazon EC2,5886.72,1548.604,24469.97,USD,"Operating system (Linux), Storage amount (1 TB), DT Inbound: Internet (100 TB per month), DT Outbound: Internet (0 TB per month), DT Intra-Region: (2 TB per month), Workload (Daily, (Workload days: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Baseline: 6, Peak: 10, Duration of peak: 12 Hr 00 Min)), Advance EC2 instance (t3.xlarge), Pricing strategy (Compute Savings Plans 1 Year  All upfront), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB)"
+Reduced_Cost_Estimate,US East (N. Virginia),Database,Amazon RDS for MySQL,6258,235.52,9084.24,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (1 TB), Quantity (1), Instance type (db.t3.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (Reserved 1yr All Upfront)"
+Reduced_Cost_Estimate,US East (N. Virginia),,S3 One Zone - Infrequent Access,0,52.7,632.4,USD,S3 One Zone-IA storage (5 TB per month)
+Reduced_Cost_Estimate,US East (N. Virginia),,Data Transfer,0,0,0,USD,"DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month)"
+Reduced_Cost_Estimate,US East (N. Virginia),Network Load Balancer,Network Load Balancer,0,454.43,5453.16,USD,"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (100 GB per hour)"
+Reduced_Cost_Estimate,US East (N. Virginia),Application Load Balancer,Application Load Balancer,0,600.43,7205.16,USD,Number of Application Load Balancers (1)
+Reduced_Cost_Estimate,US East (N. Virginia),,Amazon CloudFront,0,97.04,1164.48,USD,"Data transfer out to internet (1 TB per month), Data transfer out to origin (500 GB per month)"
+Reduced_Cost_Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,74.7,896.4,USD,Number of NAT Gateways (2)
+Reduced_Cost_Estimate,US East (N. Virginia),,Data Transfer,0,0,0,USD,"DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+Reduced_Cost_Estimate,US East (N. Virginia),Application Servers,Amazon EC2,7248.024,1767.34,28456.1,USD,"Operating system (Linux), Storage amount (1 TB), DT Inbound: Internet (100 TB per month), DT Outbound: Internet (0 TB per month), DT Intra-Region: (10 TB per month), Workload (Daily, (Workload days: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Baseline: 6, Peak: 10, Duration of peak: 12 Hr 00 Min)), Advance EC2 instance (a1.2xlarge), Pricing strategy (Compute Savings Plans 1 Year  All upfront), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB)"
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
+Rationals,,,,,,,,
+"Switch pricing strategy  form on Demand to (Compute Savings Plans 1 Year  Partial upfront) for Webservers, App severs and RDS ",,,,,,,,
+Using general purpose EC2 instance instead of compute enhanced one for application severs  **a1.2xlarge**,,,,,,,,
+"Non provisioned SSD for Webservers, App severs and RDS ",,,,,,,,
+S3 One Zone - Infrequent Access  instead of Standard,,,,,,,,
+Using gebneral purpose db.t3.2xlarge for RDS instead of M5,,,,,,,,

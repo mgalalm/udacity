@@ -1,0 +1,28 @@
+﻿Estimate summary,,,,,,,,
+Upfront cost,Monthly cost,Total 12 months cost,Currency,,,,,
+17192.376,18499.052,239181,USD,,,,,
+,,* Includes upfront cost,,,,,,
+,,,,,,,,
+,,,,,,,,
+Detailed Estimate,,,,,,,,
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+Increased_Cost_Estimate,US East (N. Virginia),Web servers,Amazon EC2,6149.52,2478.44,35890.8,USD,"Operating system (Linux), Storage amount (1 TB), DT Inbound: Internet (100 TB per month), DT Outbound: Internet (0 TB per month), DT Intra-Region: (2 TB per month), Workload (Daily, (Workload days: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Baseline: 6, Peak: 10, Duration of peak: 12 Hr 00 Min)), Advance EC2 instance (i3.xlarge), Pricing strategy (Compute Savings Plans 1 Year  Partial upfront), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB)"
+Increased_Cost_Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,3791.4,45496.8,USD,"Storage for each RDS instance (Provisioned IOPS SSD (io1)), Storage amount (500 GB), Provisioning IOPS (), Quantity (2), Instance type (db.m5d.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ (readable standbys)), Pricing strategy (OnDemand)"
+Increased_Cost_Estimate,US East (N. Virginia),,S3 Standard,0,118.41,1420.92,USD,S3 Standard storage (5 TB per month)
+Increased_Cost_Estimate,US East (N. Virginia),,Data Transfer,0,0,0,USD,"DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month)"
+Increased_Cost_Estimate,US East (N. Virginia),Network Load Balancer,Network Load Balancer,0,454.43,5453.16,USD,"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (100 GB per hour)"
+Increased_Cost_Estimate,US East (N. Virginia),Application Load Balancer,Application Load Balancer,0,600.43,7205.16,USD,Number of Application Load Balancers (1)
+Increased_Cost_Estimate,US East (N. Virginia),,Amazon CloudFront,0,97.04,1164.48,USD,"Data transfer out to internet (1 TB per month), Data transfer out to origin (500 GB per month)"
+Increased_Cost_Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,66.6,799.2,USD,Number of NAT Gateways (2)
+Increased_Cost_Estimate,US East (N. Virginia),,Data Transfer,0,0,0,USD,"DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+Increased_Cost_Estimate,US East (N. Virginia),Application Servers,Amazon EC2,11042.856,2122.812,36516.6,USD,"Operating system (Linux), Storage amount (1 TB), DT Inbound: Internet (100 TB per month), DT Outbound: Internet (0 TB per month), DT Intra-Region: (10 TB per month), Workload (Daily, (Workload days: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Baseline: 6, Peak: 10, Duration of peak: 12 Hr 00 Min)), Advance EC2 instance (c6gd.2xlarge), Pricing strategy (Compute Savings Plans 1 Year  All upfront), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB), Storage amount per io2 volume (30 GB)"
+Increased_Cost_Estimate,US East (N. Virginia),,Amazon ElastiCache,0,8769.49,105233.88,USD,"Nodes (3), Instance type (cache.m5.12xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Cache Engine (Redis), Cache Node Type (Standard), Pricing strategy (OnDemand), Nodes (1), Instance type (cache.r6gd.xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Cache Engine (Redis), Cache Node Type (Memory optimized), Pricing strategy (OnDemand)"
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
+Rationals,,,,,,,,
+"Changing EC2 classes for Web servers, App servers, MySQL to use high-performance high-IOPS NVMe SSD",,,,,,,,
+Adding Elastic cache in front of databases to provide ultrafast (submillisecond latency) due to in-memory access. ,,,,,,,,
+"Increase the redundancy of databases, by adding one more database with read replica, to increase availability, allowing for data sharing, that's why we use 500 GB isntead of 1 TB",,,,,,,,

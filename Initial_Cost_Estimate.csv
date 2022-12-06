@@ -1,0 +1,23 @@
+﻿Estimate summary
+Upfront cost,Monthly cost,Total 12 months cost,Currency
+0,8432.266,101187.19,USD
+,,* Includes upfront cost
+
+
+Detailed Estimate
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+Initial_Cost Estimate,US East (N. Virginia),Web servers,Amazon EC2,0,2482.236,29786.83,USD,"Operating system (Linux), Storage amount (1 TB), DT Inbound: Internet (100 tb_month), DT Outbound: Internet (0 tb_month), DT Intra-Region: (2 tb_month), Workload (Daily, (Workload days: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Baseline: 6, Peak: 10, Duration of peak: 12 Hr 00 Min)), Advance EC2 instance (t3.xlarge), Pricing strategy (On-Demand), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB)"
+Initial_Cost Estimate,US East (N. Virginia),Database,Amazon RDS for MySQL,0,1342.24,16106.88,USD,"Storage for each RDS instance (Provisioned IOPS SSD (io1)), Storage amount (1 TB), Provisioning IOPS (), Quantity (1), Instance type (db.m5.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand)"
+Initial_Cost Estimate,US East (N. Virginia),,S3 Standard,0,118.41,1420.92,USD,S3 Standard storage (5 TB per month)
+Initial_Cost Estimate,US East (N. Virginia),,Data Transfer,0,0,0.00,USD,"DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month)"
+Initial_Cost Estimate,US East (N. Virginia),Network Load Balancer,Network Load Balancer,0,454.43,5453.16,USD,"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (100 GB per hour)"
+Initial_Cost Estimate,US East (N. Virginia),Application Load Balancer,Application Load Balancer,0,600.43,7205.16,USD,Number of Application Load Balancers (1)
+Initial_Cost Estimate,US East (N. Virginia),,Amazon CloudFront,0,97.04,1164.48,USD,"Data transfer out to internet (1 TB per month), Data transfer out to origin (500 GB per month)"
+Initial_Cost Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,74.7,896.40,USD,Number of NAT Gateways (2)
+Initial_Cost Estimate,US East (N. Virginia),,Data Transfer,0,0,0.00,USD,"DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+Initial_Cost Estimate,US East (N. Virginia),Application Servers,Amazon EC2,0,3262.7799999999997,39153.36,USD,"Operating system (Linux), Storage amount (1 TB), DT Inbound: Internet (100 TB per month), DT Outbound: Internet (0 TB per month), DT Intra-Region: (10 TB per month), Workload (Daily, (Workload days: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Baseline: 6, Peak: 10, Duration of peak: 12 Hr 00 Min)), Advance EC2 instance (c6g.2xlarge), Pricing strategy (On-Demand), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB)"
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
